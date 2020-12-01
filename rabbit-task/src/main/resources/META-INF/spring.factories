@@ -1,0 +1,3 @@
+#Auto Configure 若有使用了 @EnableElasticJob 则不需要使用此配置
+#org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+#  com.maple.rabbit.task.config.JobParserAutoConfigurartion

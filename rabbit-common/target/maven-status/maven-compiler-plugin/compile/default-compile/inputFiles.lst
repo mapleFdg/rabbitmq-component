@@ -1,0 +1,6 @@
+/Users/hzc/Project/idea-muke-jiagou/rabbitmq-component/rabbit-common/src/main/java/com/maple/rabbit/common/serializer/SerializerFactory.java
+/Users/hzc/Project/idea-muke-jiagou/rabbitmq-component/rabbit-common/src/main/java/com/maple/rabbit/common/serializer/impl/JacksonSerializer.java
+/Users/hzc/Project/idea-muke-jiagou/rabbitmq-component/rabbit-common/src/main/java/com/maple/rabbit/common/serializer/Serializer.java
+/Users/hzc/Project/idea-muke-jiagou/rabbitmq-component/rabbit-common/src/main/java/com/maple/rabbit/common/serializer/impl/JacksonSerializerFactory.java
+/Users/hzc/Project/idea-muke-jiagou/rabbitmq-component/rabbit-common/src/main/java/com/maple/rabbit/common/convert/RabbitMessageConverter.java
+/Users/hzc/Project/idea-muke-jiagou/rabbitmq-component/rabbit-common/src/main/java/com/maple/rabbit/common/convert/GenericMessageConverter.java

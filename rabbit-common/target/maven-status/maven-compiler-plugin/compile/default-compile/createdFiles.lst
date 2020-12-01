@@ -1,0 +1,6 @@
+com/maple/rabbit/common/convert/GenericMessageConverter.class
+com/maple/rabbit/common/serializer/impl/JacksonSerializer.class
+com/maple/rabbit/common/serializer/impl/JacksonSerializerFactory.class
+com/maple/rabbit/common/serializer/Serializer.class
+com/maple/rabbit/common/serializer/SerializerFactory.class
+com/maple/rabbit/common/convert/RabbitMessageConverter.class

@@ -1,0 +1,6 @@
+/Users/hzc/Project/idea-muke-jiagou/rabbitmq-component/rabbit-task/src/main/java/com/maple/rabbit/task/annotation/EnableElasticJob.java
+/Users/hzc/Project/idea-muke-jiagou/rabbitmq-component/rabbit-task/src/main/java/com/maple/rabbit/task/enums/ElasticJobTypeEnum.java
+/Users/hzc/Project/idea-muke-jiagou/rabbitmq-component/rabbit-task/src/main/java/com/maple/rabbit/task/annotation/ElasticJobConfig.java
+/Users/hzc/Project/idea-muke-jiagou/rabbitmq-component/rabbit-task/src/main/java/com/maple/rabbit/task/parser/ElasticJobConfParser.java
+/Users/hzc/Project/idea-muke-jiagou/rabbitmq-component/rabbit-task/src/main/java/com/maple/rabbit/task/config/JobParserAutoConfigurartion.java
+/Users/hzc/Project/idea-muke-jiagou/rabbitmq-component/rabbit-task/src/main/java/com/maple/rabbit/task/config/JobZookeeperProperties.java

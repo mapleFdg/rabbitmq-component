@@ -1,0 +1,7 @@
+com/maple/rabbit/task/annotation/ElasticJobConfig.class
+com/maple/rabbit/task/config/JobZookeeperProperties.class
+com/maple/rabbit/task/annotation/EnableElasticJob.class
+com/maple/rabbit/task/parser/ElasticJobConfParser.class
+META-INF/spring-configuration-metadata.json
+com/maple/rabbit/task/config/JobParserAutoConfigurartion.class
+com/maple/rabbit/task/enums/ElasticJobTypeEnum.class

@@ -1,0 +1,8 @@
+com/maple/rabbit/api/MessageListener.class
+com/maple/rabbit/api/SendCallback.class
+com/maple/rabbit/api/exception/MessageException.class
+com/maple/rabbit/api/MessageBuilder.class
+com/maple/rabbit/api/exception/MessageRunTimeException.class
+com/maple/rabbit/api/MessageType.class
+com/maple/rabbit/api/MessageProducer.class
+com/maple/rabbit/api/Message.class

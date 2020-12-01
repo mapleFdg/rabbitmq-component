@@ -1,0 +1,16 @@
+/Users/hzc/Project/idea-muke-jiagou/rabbitmq-component/rabbit-core-producer/src/main/java/com/maple/rabbit/producer/autoConfigure/RabbitProducerAutoConfiguration.java
+/Users/hzc/Project/idea-muke-jiagou/rabbitmq-component/rabbit-core-producer/src/main/java/com/maple/rabbit/producer/broker/ProducerClient.java
+/Users/hzc/Project/idea-muke-jiagou/rabbitmq-component/rabbit-core-producer/src/main/java/com/maple/rabbit/producer/broker/AsyncBaseQueue.java
+/Users/hzc/Project/idea-muke-jiagou/rabbitmq-component/rabbit-core-producer/src/main/java/com/maple/rabbit/producer/config/database/BrokerMessageConfiguration.java
+/Users/hzc/Project/idea-muke-jiagou/rabbitmq-component/rabbit-core-producer/src/main/java/com/maple/rabbit/producer/config/database/RabbitProducerMybatisMapperScanerConfig.java
+/Users/hzc/Project/idea-muke-jiagou/rabbitmq-component/rabbit-core-producer/src/main/java/com/maple/rabbit/producer/entity/BrokerMessage.java
+/Users/hzc/Project/idea-muke-jiagou/rabbitmq-component/rabbit-core-producer/src/main/java/com/maple/rabbit/producer/config/database/RabbitProducerDataSourceConfiguration.java
+/Users/hzc/Project/idea-muke-jiagou/rabbitmq-component/rabbit-core-producer/src/main/java/com/maple/rabbit/producer/broker/RabbitBrokerImpl.java
+/Users/hzc/Project/idea-muke-jiagou/rabbitmq-component/rabbit-core-producer/src/main/java/com/maple/rabbit/producer/constant/BrokerMessageStatus.java
+/Users/hzc/Project/idea-muke-jiagou/rabbitmq-component/rabbit-core-producer/src/main/java/com/maple/rabbit/producer/broker/RabbitBroker.java
+/Users/hzc/Project/idea-muke-jiagou/rabbitmq-component/rabbit-core-producer/src/main/java/com/maple/rabbit/producer/mapper/BrokerMessageMapper.java
+/Users/hzc/Project/idea-muke-jiagou/rabbitmq-component/rabbit-core-producer/src/main/java/com/maple/rabbit/producer/broker/RabbitTemplateContainer.java
+/Users/hzc/Project/idea-muke-jiagou/rabbitmq-component/rabbit-core-producer/src/main/java/com/maple/rabbit/producer/service/impl/MessageStoreServiceImpl.java
+/Users/hzc/Project/idea-muke-jiagou/rabbitmq-component/rabbit-core-producer/src/main/java/com/maple/rabbit/producer/constant/BrokerMessageConst.java
+/Users/hzc/Project/idea-muke-jiagou/rabbitmq-component/rabbit-core-producer/src/main/java/com/maple/rabbit/producer/config/database/RabbitProducerMyBatisConfiguration.java
+/Users/hzc/Project/idea-muke-jiagou/rabbitmq-component/rabbit-core-producer/src/main/java/com/maple/rabbit/producer/service/MessageStoreService.java

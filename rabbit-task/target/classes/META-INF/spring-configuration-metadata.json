@@ -1,0 +1,66 @@
+{
+  "groups": [
+    {
+      "name": "elastic.job.zk",
+      "type": "com.maple.rabbit.task.config.JobZookeeperProperties",
+      "sourceType": "com.maple.rabbit.task.config.JobZookeeperProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "elastic.job.zk.base-sleep-time-milliseconds",
+      "type": "java.lang.Integer",
+      "description": "等待重试的间隔时间的初始毫秒数",
+      "sourceType": "com.maple.rabbit.task.config.JobZookeeperProperties",
+      "defaultValue": 1000
+    },
+    {
+      "name": "elastic.job.zk.connection-timeout-milliseconds",
+      "type": "java.lang.Integer",
+      "description": "连接超时毫秒数",
+      "sourceType": "com.maple.rabbit.task.config.JobZookeeperProperties",
+      "defaultValue": 15000
+    },
+    {
+      "name": "elastic.job.zk.digest",
+      "type": "java.lang.String",
+      "description": "连接 ZooKeeper 的权限令牌",
+      "sourceType": "com.maple.rabbit.task.config.JobZookeeperProperties",
+      "defaultValue": ""
+    },
+    {
+      "name": "elastic.job.zk.max-retries",
+      "type": "java.lang.Integer",
+      "description": "最大重试次数",
+      "sourceType": "com.maple.rabbit.task.config.JobZookeeperProperties",
+      "defaultValue": 3
+    },
+    {
+      "name": "elastic.job.zk.max-sleep-time-milliseconds",
+      "type": "java.lang.Integer",
+      "description": "等待重试的间隔时间的最大毫秒数",
+      "sourceType": "com.maple.rabbit.task.config.JobZookeeperProperties",
+      "defaultValue": 3000
+    },
+    {
+      "name": "elastic.job.zk.namespace",
+      "type": "java.lang.String",
+      "description": "连接 ZooKeeper 服务器的列表",
+      "sourceType": "com.maple.rabbit.task.config.JobZookeeperProperties"
+    },
+    {
+      "name": "elastic.job.zk.server-lists",
+      "type": "java.lang.String",
+      "description": "ZooKeeper 的命名空间",
+      "sourceType": "com.maple.rabbit.task.config.JobZookeeperProperties"
+    },
+    {
+      "name": "elastic.job.zk.session-timeout-milliseconds",
+      "type": "java.lang.Integer",
+      "description": "会话超时毫秒数",
+      "sourceType": "com.maple.rabbit.task.config.JobZookeeperProperties",
+      "defaultValue": 60000
+    }
+  ],
+  "hints": []
+}

@@ -1,0 +1,8 @@
+/Users/hzc/Project/idea-muke-jiagou/rabbitmq-component/rabbit-api/src/main/java/com/maple/rabbit/api/MessageBuilder.java
+/Users/hzc/Project/idea-muke-jiagou/rabbitmq-component/rabbit-api/src/main/java/com/maple/rabbit/api/MessageProducer.java
+/Users/hzc/Project/idea-muke-jiagou/rabbitmq-component/rabbit-api/src/main/java/com/maple/rabbit/api/exception/MessageRunTimeException.java
+/Users/hzc/Project/idea-muke-jiagou/rabbitmq-component/rabbit-api/src/main/java/com/maple/rabbit/api/exception/MessageException.java
+/Users/hzc/Project/idea-muke-jiagou/rabbitmq-component/rabbit-api/src/main/java/com/maple/rabbit/api/SendCallback.java
+/Users/hzc/Project/idea-muke-jiagou/rabbitmq-component/rabbit-api/src/main/java/com/maple/rabbit/api/MessageType.java
+/Users/hzc/Project/idea-muke-jiagou/rabbitmq-component/rabbit-api/src/main/java/com/maple/rabbit/api/MessageListener.java
+/Users/hzc/Project/idea-muke-jiagou/rabbitmq-component/rabbit-api/src/main/java/com/maple/rabbit/api/Message.java
