@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.imooc.mapper.ItemsMapperCustom" >
+
+  <select id="queryItemComments" parameterType="Map" resultType="com.imooc.vo.ItemCommentVO">
+    SELECT
+        ic.comment_level AS commentLevel,
+        ic.content AS content,
+        ic.sepc_name AS specName,
+        ic.created_time AS createdTime,
+        u.face AS userFace,
+        u.nickname AS nickname 
+    FROM
+        items_comments ic
+        LEFT JOIN users u ON ic.user_id = u.id 
+    WHERE
+        ic.item_id = #{paramsMap.itemId}
+    <if test=" paramsMap.level != null and paramsMap.level != '' ">
+        AND ic.comment_level = #{paramsMap.level}
+    </if>
+
+  </select>
+    
+    <select id="searchItems" parameterType="map" resultType="com.imooc.vo.SearchItemsVO">
+        SELECT
+            i.id AS itemId,
+            i.item_name AS itemName,
+            i.sell_counts AS sellCounts,
+            ii.url AS imgUrl,
+            tempSpec.price_discount AS price 
+        FROM
+            items i
+            LEFT JOIN items_img ii ON i.id = ii.item_id
+            LEFT JOIN ( SELECT item_id, MIN( price_discount ) AS price_discount FROM items_spec GROUP BY item_id ) tempSpec ON i.id = tempSpec.item_id 
+        WHERE
+            ii.is_main = 1
+        <if test="paramsMap.keyword != null and paramsMap.keyword != ''">
+            AND i.item_name like '%${paramsMap.keyword}%'
+        </if>
+        ORDER BY
+        <choose>
+            <when test="paramsMap.sort == &quot;c&quot;">
+                i.sell_counts desc
+            </when>
+            <when test="paramsMap.sort == &quot;p&quot;">
+                tempSpec.price_discount desc
+            </when>
+            <otherwise>
+                i.item_name asc
+            </otherwise>
+        </choose>
+        
+    </select>
+
+    <select id="searchItemsByThirdCat" parameterType="Map" resultType="com.imooc.vo.SearchItemsVO">
+        SELECT
+            i.id as itemId,
+            i.item_name as itemName,
+            i.sell_counts as sellCounts,
+            ii.url as imgUrl,
+            tempSpec.price_discount as price
+        FROM
+            items i
+        LEFT JOIN
+            items_img ii
+        on
+            i.id = ii.item_id
+        LEFT JOIN
+            (SELECT item_id,MIN(price_discount) as price_discount from items_spec GROUP BY item_id) tempSpec
+        on
+            i.id = tempSpec.item_id
+        WHERE
+            ii.is_main = 1
+        and
+            i.cat_id = #{paramsMap.catId}
+        order by
+        <choose>
+            <when test=" paramsMap.sort == &quot;c&quot; ">
+                i.sell_counts desc
+            </when>
+            <when test=" paramsMap.sort == &quot;p&quot; ">
+                tempSpec.price_discount asc
+            </when>
+            <otherwise>
+                i.item_name asc
+            </otherwise>
+        </choose>
+    </select>
+
+    <select id="queryItemsBySpecIds" parameterType="List" resultType="com.imooc.vo.ShopcartVO">
+        SELECT
+            i.id AS itemId,
+            i.item_name AS itemName,
+            ii.url AS itemImgUrl,
+            s.id AS specId,
+            s.`name` AS specName,
+            s.price_discount AS priceDiscount,
+            s.price_normal AS priceNormal
+        FROM
+            items_spec s
+            LEFT JOIN items i ON i.id = s.item_id
+            LEFT JOIN items_img ii ON ii.item_id = i.id
+        WHERE
+            ii.is_main = 1
+        AND
+            s.id in
+            <foreach collection="params" index="index" item="item" open="(" close=")" separator=",">
+                #{item}
+            </foreach>
+    </select>
+
+    <update id="decreaseItemSpecStock" parameterType="Map">
+        UPDATE
+            items_spec s
+        set
+            s.stock = s.stock - #{panddingCount}
+        WHERE
+            s.id = #{specId}
+        AND
+            s.stock >= #{panddingCount}
+    </update>
+</mapper>

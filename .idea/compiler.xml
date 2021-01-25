@@ -6,11 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="rabbit-common" />
-        <module name="esjob-task" />
-        <module name="rabbit-core-producer" />
         <module name="rabbit-task" />
+        <module name="rabbit-core-producer" />
+        <module name="rabbit-demo" />
+        <module name="esjob-task" />
         <module name="rabbit-api" />
+        <module name="rabbit-common" />
       </profile>
     </annotationProcessing>
   </component>
@@ -20,6 +21,7 @@
       <module name="rabbit-api" options="-parameters" />
       <module name="rabbit-common" options="-parameters" />
       <module name="rabbit-core-producer" options="-parameters" />
+      <module name="rabbit-demo" options="-parameters" />
       <module name="rabbit-task" options="-parameters" />
     </option>
   </component>
