@@ -1,6 +1,6 @@
 package com.maple.rabbit.task.annotation;
 
-import com.maple.rabbit.task.config.JobParserAutoConfigurartion;
+import com.maple.rabbit.task.config.JobParserAutoConfiguration;
 import org.springframework.context.annotation.Import;
 
 import java.lang.annotation.*;
@@ -15,6 +15,6 @@ import java.lang.annotation.*;
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
 @Inherited
-@Import(JobParserAutoConfigurartion.class)
+@Import(JobParserAutoConfiguration.class)
 public @interface EnableElasticJob {
 }

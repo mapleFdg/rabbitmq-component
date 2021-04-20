@@ -77,7 +77,6 @@ public class MessageBuilder {
         if(topic == null) {
             throw new MessageRunTimeException("this topic is null");
         }
-        Message message = new Message(messageId, topic, routingKey, attributes, delayMills, messageType);
-        return message;
+        return new Message(messageId, topic, routingKey, attributes, delayMills, messageType);
     }
 }

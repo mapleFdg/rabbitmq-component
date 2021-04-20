@@ -15,6 +15,9 @@ import org.springframework.amqp.support.converter.MessageConverter;
  */
 public class GenericMessageConverter implements MessageConverter {
 
+    /**
+     * 序列化方式
+     */
     private Serializer serializer;
 
     public GenericMessageConverter(Serializer serializer){

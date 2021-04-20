@@ -8,6 +8,9 @@ package com.maple.rabbit.producer.constant;
  */
 public enum BrokerMessageStatus {
 
+    /**
+     * 字典值
+     */
     SENDING("0"),
     SEND_OK("1"),
     SEND_FAIL("2");

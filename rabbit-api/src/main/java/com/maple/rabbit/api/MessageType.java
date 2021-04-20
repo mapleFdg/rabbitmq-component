@@ -1,7 +1,7 @@
 package com.maple.rabbit.api;
 
 /**
- * $MessageType
+ * $MessageType 消息类型
  *
  * @author hzc
  * @date 2020/11/22 11:11 上午

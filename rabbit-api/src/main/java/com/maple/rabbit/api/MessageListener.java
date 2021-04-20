@@ -8,5 +8,10 @@ package com.maple.rabbit.api;
  */
 public interface MessageListener {
 
+    /**
+     * 消费者监听消息
+     *
+     * @param message 消息类型
+     */
     void onMessage(Message message);
 }

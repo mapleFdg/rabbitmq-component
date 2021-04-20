@@ -75,14 +75,13 @@ public class MySimpleJobConfig {
 
         SimpleJobConfiguration simpleJobConfiguration = new SimpleJobConfiguration(jobCoreConfiguration, jobClass.getCanonicalName());
 
-        LiteJobConfiguration liteJobConfiguration = LiteJobConfiguration.newBuilder(simpleJobConfiguration)
+        return LiteJobConfiguration.newBuilder(simpleJobConfiguration)
                 .jobShardingStrategyClass(jobShardingStrategyClass)
                 .monitorExecution(monitorExecution)
                 .monitorPort(monitorPort)
                 .maxTimeDiffSeconds(maxTimeDiffSeconds)
                 .overwrite(true)
                 .build();
-        return liteJobConfiguration;
     }
 
 }

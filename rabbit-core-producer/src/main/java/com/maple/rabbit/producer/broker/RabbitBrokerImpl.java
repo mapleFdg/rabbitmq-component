@@ -48,7 +48,7 @@ public class RabbitBrokerImpl implements RabbitBroker {
             String topic = message.getTopic();
             String routingKey = message.getRoutingKey();
             RabbitTemplate rabbitTemplate = rabbitTemplateContainer.getTemplate(message);
-            rabbitTemplate.convertAndSend("exchange", routingKey, message, correlationData);
+            rabbitTemplate.convertAndSend(topic, routingKey, message, correlationData);
             log.info("#RabbitBrokerImpl.sendKernel# send to rabbitmq, messageId : {}", message.getMessageId());
         });
 

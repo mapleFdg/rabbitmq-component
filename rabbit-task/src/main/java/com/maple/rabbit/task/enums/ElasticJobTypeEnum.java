@@ -8,6 +8,9 @@ package com.maple.rabbit.task.enums;
  */
 public enum ElasticJobTypeEnum {
 
+    /**
+     * 值
+     */
     SIMPLE("SimpleJob","简单类型job"),
     DATAFLOW("DataflowJob","流式类型job"),
     SCRIPT("ScriptJob","脚本类型job");

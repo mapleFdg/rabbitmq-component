@@ -26,6 +26,9 @@ public class AsyncBaseQueue {
      */
     private static final int QUEUE_SIZE = 1000;
 
+    /**
+     * 发送调用线程池
+     */
     private static ExecutorService senderAsync = new ThreadPoolExecutor(THREAD_SIZE, THREAD_SIZE, 60L, TimeUnit.SECONDS, new ArrayBlockingQueue<>(QUEUE_SIZE),
             new ThreadFactory() {
                 @Override
